@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OnBoardingProyecto.InsertarDato"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Insertar Información" 
+                   FontSize="25" 
+                   BackgroundColor="Black" 
+                   TextColor="White" 
+                   HorizontalOptions="Center" 
+                
+                ></Label>
+            <Entry x:Name="txtCodigo" Placeholder="Ingrese el codigo"></Entry>
+            <Entry x:Name="txtNombre" Placeholder="Ingrese el nombre"></Entry>
+            <Entry x:Name="txtApellido" Placeholder="Ingrese el apellido"></Entry>
+            <Entry x:Name="txtEdad" Placeholder="Ingrese la edad"></Entry>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="Insertar dato" BackgroundColor="Black" TextColor="White" x:Name="btnInsertar" Clicked="btnInsertar_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar" BackgroundColor="Black" TextColor="White" x:Name="btnRegresar" Clicked="btnRegresar_Clicked"/>
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
