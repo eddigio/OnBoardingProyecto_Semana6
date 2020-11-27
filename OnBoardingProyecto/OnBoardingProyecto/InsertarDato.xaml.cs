@@ -27,7 +27,7 @@ namespace OnBoardingProyecto
                 parametros.Add("codigo",txtCodigo.Text);
                 parametros.Add("nombre", txtNombre.Text);
                 parametros.Add("apellido", txtApellido.Text);
-                parametros.Add("edad", txtEdad.Text);
+               // parametros.Add("edad", txtEdad.Text);
                 cliente.UploadValues("http://192.168.100.27/onboarding/post.php","POST",parametros);
                 await DisplayAlert("Alerta", "Dato ingresado correctamente", "OK");
             }
@@ -41,6 +41,7 @@ namespace OnBoardingProyecto
 
         private async void btnRegresar_Clicked(object sender, EventArgs e)
         {
+            //espera
             await Navigation.PushAsync(new MainPage());
         }
     }

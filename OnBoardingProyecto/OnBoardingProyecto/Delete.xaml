@@ -4,9 +4,28 @@
              x:Class="OnBoardingProyecto.Delete">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="ELIMINAR" 
+                BackgroundColor="Black" TextColor="White" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtEliminar" Placeholder="Ingrese el ID del campo a eliminar" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Eliminar" BackgroundColor="Black" TextColor="White"
+                    x:Name="btnEliminar"
+                    Clicked="btnEliminar_Clicked">
+                </Button>
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar" BackgroundColor="Black" TextColor="White"
+                    x:Name="btnRegresar"
+                    Clicked="btnRegresar_Clicked">
+                </Button>
+            </Grid>
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -53,6 +53,9 @@ namespace OnBoardingProyecto
             await Navigation.PushAsync(new Delete());
         }
 
-
+        private  async void btnReservar_Clicked(object sender, EventArgs e)
+        {
+            //await Navigation.PushAsync(new InsertarReserva());
+        }
     }
 }

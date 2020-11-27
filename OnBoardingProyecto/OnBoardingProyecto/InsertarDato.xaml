@@ -16,7 +16,7 @@
             <Entry x:Name="txtCodigo" Placeholder="Ingrese el codigo"></Entry>
             <Entry x:Name="txtNombre" Placeholder="Ingrese el nombre"></Entry>
             <Entry x:Name="txtApellido" Placeholder="Ingrese el apellido"></Entry>
-            <Entry x:Name="txtEdad" Placeholder="Ingrese la edad"></Entry>
+            
 
             <Grid>
                 <Grid.RowDefinitions>

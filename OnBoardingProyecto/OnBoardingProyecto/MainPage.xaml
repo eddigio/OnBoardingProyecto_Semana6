@@ -23,12 +23,20 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button Text="Insertar"
+        <Button Text="Insertar Alumno"
                 x:Name="btnGet"
                 BackgroundColor="Black"
                 TextColor="White"
                 Clicked="btnGet_Clicked">
         </Button>
+
+        <Button Text="Reservar Espacio"
+                x:Name="btnReservar"
+                BackgroundColor="Black"
+                TextColor="White"
+                Clicked="btnReservar_Clicked"
+            
+            ></Button>
 
         <Button Text="Actualizar"
                 x:Name="btnPost"
@@ -38,6 +46,8 @@
         </Button>
         <Button Text="Eliminar"
                 x:Name="btnDelete"
+                BackgroundColor="Black"
+                TextColor="White"
                 Clicked="btnDelete_Clicked">
         </Button>
 
